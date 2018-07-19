@@ -1,0 +1,109 @@
+<html><head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="google-signin-client_id" content="613975561594-mmnbgbv0isud9vd1bou506s6gn1e1mfq.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/js/login.js"></script>
+    <title>Language Translator</title>
+  </head><body class="start">
+        <div class="cover">
+            <div class="navbar">
+                <div class="container" >
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse" style="background-color: #E0E0E0">
+                            <span class="sr-only" >Toggle navigation</span>
+                            <span class="icon-bar" style="color:#000;background-color:#000;"></span>
+                            <span class="icon-bar" style="color:#000;background-color:#000;"></span>
+                            <span class="icon-bar" style="color:#000;background-color:#000;"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="color: #fff;"><span>Language Translator</span></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" id="dropimg" data-toggle="dropdown" href="#" style="margin:0px;padding:0px;padding-left:5px;padding-top:3px;"> <img id="pic" class="img-circle" width="50px" height="50px"/><span class="caret"></span></a>
+                               <ul class="dropdown-menu">
+                                 <li style="cursor:pointer;"><a id="name"></a></li>
+                                 <li onclick="signOut()" style="cursor:pointer;"><a>Sign Out</a></li>
+                               </ul>
+                              </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container", id="top" >
+              <div class="app_container" id="body">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6" style="color:black;" class="form-group">
+                      <h2 style="padding-left:16%;">Input</h2>
+                      <center>
+                      <select id="lang1" style="width:66%;color:black;"  class="form-control">
+                       <option value="default">Choose Language</option>
+                      <option value="en">  English </option>
+                      <option value="nl">  Dutch </option>
+                      <option value="tr">  Turkish </option>
+                      <option value="de">  German</option>
+                      <option value="pt">  Portuguese</option>
+                      <option value="ru">  Russian</option>
+                      <option value="fr">  French</option>
+                      <option value="ko">  Korean</option>
+                      <option value="it">  Italian</option>
+                      <option value="zh">  Chinese</option>
+                      <option value="es">  Spanish</option>
+                      <option value="ar">  Arabic</option>
+                      <option value="ja">  Japanese</option>
+                      <option value="zh">  Traditional Chinese</option>
+                      <option value="pl">  Polish</option>
+                    </select>
+                        <textarea cols="40" class="speech-only" id="speech" wrap="soft" placeholder="Enter text here"></textarea>
+                      <br/>
+                      </center>
+                    </div>
+                    <div class="col-md-6 col-sm-6" style="color:black;" class="form-group">
+                    <h2 style="padding-left:16%;">Output</h2>
+                    <center>
+                    <select id="lang2" style="width:66%;color:black;" class="form-control">
+                     <option value="default">Choose Language</option>
+                       <option value="en">  English </option>
+                    <option value="nl">  Dutch </option>
+                    <option value="tr">  Turkish </option>
+                    <option value="de">  German</option>
+                    <option value="pt">  Portuguese</option>
+                    <option value="ru">  Russian</option>
+                    <option value="fr">  French</option>
+                    <option value="ko">  Korean</option>
+                    <option value="it">  Italian</option>
+                    <option value="zh">  Chinese</option>
+                    <option value="es">  Spanish</option>
+                    <option value="ar">  Arabic</option>
+                    <option value="ja">  Japanese</option>
+                    <option value="zh">  Traditional Chinese</option>
+                    <option value="pl">  Polish</option>
+                  </select>
+                      <textarea  class="speech-only" cols="40" id="speech1" wrap="soft" placeholder="Enter text here"></textarea>
+                      <br/>
+                      </center>
+                      <button type="button" style="float:right;margin-right:20%;margin-top:3%;" class="btn btn-success"  onclick="Submit()">Submit</button>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/watson-speech.js"></script>
+    <script src="js/speech.js"></script>
+    <link href="CSS/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="CSS/pageStyles.css" rel="stylesheet" type="text/css">
+
+		</body>
+</html>
